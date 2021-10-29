@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="../project.html/style.css">
+    <style>
+        button{
+            color: blue;
+            background-color:white;
+            font-size: 20px;
+        }
+        h1{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body id="background">
+    <section>
+        <form id="form1" name="myform" onsubmit="return validation()" method="post" action="restaturantapp.html">
+              <h1 style="text-align: center;">CONTACT US</h1><br><br>
+                  <div class="edit" >
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" pattern="[a-zA-z ]{3,20}" required><br><br>
+      
+                  <label for="mail">Email:</label>
+                  <input type="email" id="mail" name="user_email" required><br><br>
+      
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="user_password" required><br><br>
+
+                  <label for="password">confirm password:</label>
+                  <input type="password" id="password" name="confirm_password" required><br><br>
+      
+                  <label for="number">Contact Number:</label>
+                  <input type="number" id="number" name="user_number" required><br><br>
+              <button type="submit">Sign Up</button>
+              </div>
+          </form>
+      </section>
+      <script src="validation.js"></script>
+</body>
+</html>
